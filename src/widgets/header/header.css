@@ -1,0 +1,40 @@
+.header {
+padding-top: 40px;
+
+@media (max-width: 768px) {
+  padding-top: 20px;
+}
+}
+
+.header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+
+  @media (max-width: 670px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+}
+
+.header-img {
+  display: flex;
+  justify-content: center;
+}
+
+.header-img--school{
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 368px) {
+    width: 95%;
+    height: 95%;
+  }
+
+}
+
+.header-img--logo{
+  display: flex;
+  justify-content: center;
+}

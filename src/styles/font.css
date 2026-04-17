@@ -1,0 +1,10 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "GreatVibes";
+
+  font-display: swap;
+  src:
+    url("/font/GreatVibes-Regular.woff2") format("woff2"),
+    url("/font/GreatVibes-Regular.woff") format("woff");
+}
