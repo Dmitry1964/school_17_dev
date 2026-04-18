@@ -8,3 +8,14 @@
     url("/font/GreatVibes-Regular.woff2") format("woff2"),
     url("/font/GreatVibes-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Lobster";
+
+  font-display: swap;
+  src:
+    url("/font/Lobster-Regular.woff2") format("woff2"),
+    url("/font/Lobster-Regular.woff") format("woff");
+}
