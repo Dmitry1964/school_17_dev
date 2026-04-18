@@ -12,7 +12,7 @@
 }
 
 .about-title {
-  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  font-family: "Lobster", Helvetica, sans-serif;
   font-style: normal;
   font-size: 80px;
   line-height: 88px;
@@ -60,10 +60,7 @@
 #image-two {
   justify-self: end;
 }
-#image-three {
-  justify-self: center;
-}
 #image-four {
-  justify-self: center;
+  justify-self: end;
 }
 
