@@ -1,4 +1,4 @@
-import './app.css';
+import './App.css';
 import './styles/Main-page.css';
 import './styles/font.css';
 import PhotoCard from './widgets/photo-card/photo-card';
