@@ -1,4 +1,4 @@
-import './App.css';
+import './app.css';
 import './styles/Main-page.css';
 import './styles/font.css';
 import PhotoCard from './widgets/photo-card/photo-card';
@@ -22,7 +22,7 @@ const App = () => {
               desc={"photo"}
             />
           </div> */}
-          <MeetingList/>
+          {/* <MeetingList/> */}
         </div>
       </main>
     </>
