@@ -25,6 +25,12 @@ margin-bottom: 20px;
   }
 }
 
+.header-school {
+  @media (max-width: 550px) {
+    display: none;
+  }
+}
+
 .header-school--img {
   width: 100%;
   object-fit: cover;

@@ -1,7 +1,41 @@
+.girls-list {
+  background-image: url('/img/girls/slide-bg-tablet.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+}
+
+.girls-list--title {
+  font-family: "GreatVibes", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 88px;
+  color: var(--color-red);
+  text-align: center;
+  margin: 0 0 20px;
+
+  @media (max-width: 550px) {
+    font-size: 55px;
+    line-height: 60px;
+    margin: 0 0 10px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0 0 5px;
+  }
+}
 
 .girls-list--slide {
   display: flex;
   justify-content: center;
+
+  img {
+    border-radius: 15px;
+  }
 }
 
 .swiper-wrapper {
