@@ -1,0 +1,9 @@
+
+.girls-list--slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}

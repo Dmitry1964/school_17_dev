@@ -1,11 +1,11 @@
-
+import { GirlsList } from "../../widgets/girls-list/girls-list";
 
 const GirlsPage = () => {
   return (
-    <section className="girls-page">
-        <h1>девочки</h1>
-    </section>
-  )
-}
+    <main>
+      <GirlsList/>
+    </main>
+  );
+};
 
 export default GirlsPage;
