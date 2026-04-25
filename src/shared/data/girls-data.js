@@ -41,11 +41,11 @@ export const girlsData = [
   },
     {
     id: 'c64646ce6d574a5db32e31f9615sd45d8',
-    path: '/img/girls/military-girls.jpg',
-    pathWebp: '/img/girls/military-girls.webp',
+    path: '/img/girls/military-girls-1.jpg',
+    pathWebp: '/img/girls/military-girls-1.webp',
     alt: 'Фотография девушек',
     width: '290',
-    height: '231'
+    height: '294'
   },
 
 
