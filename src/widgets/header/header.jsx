@@ -3,7 +3,7 @@ import "./header.css";
 const Header = () => {
   return (
     <>
-      <header className="header container">
+      <header className="header">
         <div className="header-wrapper">
           <div className="header-school">
             <picture>
@@ -26,4 +26,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export {Header};

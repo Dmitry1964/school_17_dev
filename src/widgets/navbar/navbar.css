@@ -1,0 +1,35 @@
+.navbar {
+  box-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.25),
+    0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: var(--color-light-gray);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  list-style: none;
+  outline: none;
+}
+
+.navbar-link {
+  display: block;
+}
+
+.navbar-link--img img {
+  display: block;
+  border-radius: 50%;
+}
+
+.active img {
+  border-radius: 15px;
+  box-shadow:
+    0 4px 2px 0 rgba(0, 0, 0, 0.25),
+    4px 0 2px 0 rgba(0, 0, 0, 0.25);
+}

@@ -1,14 +1,20 @@
 .about {
   background: radial-gradient(50% 50% at 50% 50%, #d9d9d9 61.54%, #737373 100%);
   border-radius: 15px;
+  /* margin-top: 20px; */
+
+  /* @media (max-width: 550px) {
+    margin-top: 0;
+  } */
 }
 
 .about-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 20px;
-  padding: 20px;
+  /* gap: 20px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .about-title {
@@ -23,10 +29,12 @@
   grid-column-start: 1;
   grid-column-end: 3;
   z-index: 100;
+  margin: 30px 0 0;
 
   @media (max-width: 550px) {
     font-size: 40px;
     line-height: 44px;
+    margin: 0;;
   }
 }
 
