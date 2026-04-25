@@ -21,7 +21,6 @@ const GirlsList = () => {
             modules={[Pagination, EffectCreative]}
             pagination={{ clickable: true }}
             loop={true}
-            speed={0.3}
             effect="creative"
             creativeEffect={{
               prev: {
@@ -52,24 +51,13 @@ const GirlsList = () => {
         )}
         {isTablet && (
           <Swiper
-            slidesPerView={3}
+            slidesPerView={2.5}
             centeredSlides={true}
-            spaceBetween={25}
+            spaceBetween={15}
             modules={[Pagination, FreeMode]}
             pagination={{ clickable: true }}
             loop={true}
             freeMode={true}
-            speed={0.3}
-            breakpoints={{
-              480: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              720: {
-                slidesPerView: 3,
-                spaceBetween: 25,
-              },
-            }}
           >
             {girlsData.map((item) => (
               <SwiperSlide key={item.id}>
