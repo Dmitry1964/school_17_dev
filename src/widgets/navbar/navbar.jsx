@@ -14,31 +14,98 @@ const Navbar = () => {
           >
             <div className="navbar-link--wrapper">
               <div className="navbar-link--img">
-                <img src="/img/links/link-school.png" width={100} height={100} alt="Фотография школы" />
+                <img
+                  src="/img/links/link-school.png"
+                  width={100}
+                  height={100}
+                  alt="Фотография школы"
+                />
               </div>
+              <div className="navbar-link--bg"></div>
             </div>
           </NavLink>
         </li>
         <li className="navbar-item">
           <NavLink
-            to="#"
+            to="girls"
             className={({ isActive }) =>
               isActive ? 'navbar-link active' : 'navbar-link'
             }
           >
-            About
+            <div className="navbar-link--wrapper">
+              <div className="navbar-link--img">
+                <img
+                  src="/img/links/link-girls.png"
+                  width={100}
+                  height={100}
+                  alt="Picture girls"
+                />
+              </div>
+              <div className="navbar-link--bg"></div>
+            </div>
           </NavLink>
         </li>
         <li className="navbar-item">
           <NavLink
-            to="#"
+            to="men"
             className={({ isActive }) =>
               isActive ? 'navbar-link active' : 'navbar-link'
             }
           >
-            Contact
+            <div className="navbar-link--wrapper">
+              <div className="navbar-link--img">
+                <img
+                  src="/img/links/link-men.png"
+                  width={100}
+                  height={100}
+                  alt="Picture men"
+                />
+              </div>
+              <div className="navbar-link--bg"></div>
+            </div>
           </NavLink>
         </li>
+        <li className="navbar-item">
+          <NavLink
+            to="friends"
+            className={({ isActive }) =>
+              isActive ? 'navbar-link active' : 'navbar-link'
+            }
+          >
+            <div className="navbar-link--wrapper">
+              <div className="navbar-link--img">
+                <img
+                  src="/img/links/link-friends.png"
+                  width={100}
+                  height={100}
+                  alt="Picture men"
+                />
+              </div>
+              <div className="navbar-link--bg"></div>
+            </div>
+          </NavLink>
+        </li>
+                <li className="navbar-item">
+          <NavLink
+            to="after-school"
+            className={({ isActive }) =>
+              isActive ? 'navbar-link active' : 'navbar-link'
+            }
+          >
+            <div className="navbar-link--wrapper">
+              <div className="navbar-link--img">
+                <img
+                  src="/img/links/link-after-school.png"
+                  width={100}
+                  height={100}
+                  alt="Picture after-school"
+                />
+              </div>
+              <div className="navbar-link--bg"></div>
+            </div>
+          </NavLink>
+        </li>
+
       </ul>
     </nav>
   );
