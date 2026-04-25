@@ -52,18 +52,15 @@ const GirlsList = () => {
         )}
         {isTablet && (
           <Swiper
-            // slidesPerView={3}
-            // spaceBetween={25}
+            slidesPerView={3}
+            centeredSlides={true}
+            spaceBetween={25}
             modules={[Pagination, FreeMode]}
             pagination={{ clickable: true }}
             loop={true}
             freeMode={true}
             speed={0.3}
             breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
               480: {
                 slidesPerView: 2,
                 spaceBetween: 20,
