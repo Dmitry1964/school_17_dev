@@ -1,17 +1,18 @@
 import './modal.css';
 
 const Modal = (props) => {
-  const { imgSrc, imgAlt, closeModal } = props;
+  const { imgSrc, imgWebp, imgAlt, closeModal } = props;
 
   return (
     <div className="modal">
       <div className="modal-content">
         <div className="modal-img">
-          <img src={imgSrc} alt={imgAlt} />
+          <picture>
+            <source type="image/webp" srcSet={imgWebp} />
+            <img src={imgSrc} alt={imgAlt} />
+          </picture>
         </div>
-        <button className="modal-close" onClick={closeModal}>
-          Закрыть
-        </button>
+        <button className="modal-close" onClick={closeModal}></button>
       </div>
     </div>
   );

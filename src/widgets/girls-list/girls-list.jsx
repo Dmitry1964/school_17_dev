@@ -17,6 +17,7 @@ import { Modal } from '../../features/modal/modal';
 const GirlsList = () => {
   const [modalImg, setModalImg] = useState({
     imgSrc: '',
+    imgWebp: '',
     imgAlt: '',
     isOpen: false,
   });
@@ -26,11 +27,13 @@ const GirlsList = () => {
   const isTablet = windowWidth >= 480;
 
   const handleSlideImage = (evt) => {
-    // const idImg = evt.currentTarget.id;
-    // const findImg = girlsData.find((item) => item.id === idImg);
-    const srcImg = evt.currentTarget.src;
-    const altImg = evt.currentTarget.alt;
-    setModalImg({ ...modalImg, imgSrc: srcImg, imgAlt: altImg, isOpen: true });
+    const id = evt.currentTarget.id;
+    const findImg = girlsData.find((item) => item.id === id);
+    const srcImg = findImg.path;
+    const srcWebp = findImg.pathWebp;
+    const altImg = findImg.alt;
+    setModalImg({ ...modalImg, imgSrc: srcImg, imgWebp: srcWebp, imgAlt: altImg, isOpen: true });
+    console.log(modalImg);
   };
   const handleCloseModal = () => {
     setModalImg({ ...modalImg, isOpen: false });
@@ -104,7 +107,8 @@ const GirlsList = () => {
           </Swiper>
         )}
       </div>
-      {modalImg.isOpen && <Modal imgSrc={modalImg.imgSrc} imgAlt={modalImg.imgAlt} closeModal={handleCloseModal} />}
+      {modalImg.isOpen &&
+       <Modal imgSrc={modalImg.imgSrc} imgWebp={modalImg.imgWebp} imgAlt={modalImg.imgAlt} closeModal={handleCloseModal} />}
     </section>
   );
 };
