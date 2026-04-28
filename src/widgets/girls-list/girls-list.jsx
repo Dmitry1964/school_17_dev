@@ -33,7 +33,6 @@ const GirlsList = () => {
     const srcWebp = findImg.pathWebp;
     const altImg = findImg.alt;
     setModalImg({ ...modalImg, imgSrc: srcImg, imgWebp: srcWebp, imgAlt: altImg, isOpen: true });
-    console.log(modalImg);
   };
   const handleCloseModal = () => {
     setModalImg({ ...modalImg, isOpen: false });
