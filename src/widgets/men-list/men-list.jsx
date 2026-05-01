@@ -1,0 +1,112 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import 'swiper/css/free-mode';
+import 'swiper/css/effect-cube';
+import {
+  FreeMode,
+  Pagination,
+  EffectCube,
+  Navigation,
+} from 'swiper/modules';
+import { menData } from '../../shared/data/men-data';
+import './men-list.css';
+import { useWindowWidth } from '../../shared/hooks/useWindowWidth';
+import { useState } from 'react';
+import { Modal } from '../../features/modal/modal';
+
+const MenList = () => {
+  const [modalImg, setModalImg] = useState({
+    imgSrc: '',
+    imgWebp: '',
+    imgAlt: '',
+    isOpen: false,
+  });
+
+  const windowWidth = useWindowWidth();
+  const isMobile = windowWidth < 480;
+  const isTablet = windowWidth >= 480;
+
+  const handleSlideImage = (evt) => {
+    const id = evt.currentTarget.id;
+    const findImg = menData.find((item) => item.id === id);
+    const srcImg = findImg.path;
+    const srcWebp = findImg.pathWebp;
+    const altImg = findImg.alt;
+    setModalImg({ ...modalImg, imgSrc: srcImg, imgWebp: srcWebp, imgAlt: altImg, isOpen: true });
+  };
+  const handleCloseModal = () => {
+    setModalImg({ ...modalImg, isOpen: false });
+  }
+  return (
+    <section className="men-list">
+      <h2 className="men-list--title">Сильная половина</h2>
+      <div className="men-list--wrapper container">
+        {isMobile && (
+          <Swiper
+            slidesPerView={1}
+            modules={[Pagination, EffectCube]}
+            pagination={{ dynamicBullets: true }}
+            loop={true}
+            effect="cube"
+            cubeEffect={{
+              shadow: true,
+              slideShadows: true,
+              shadowOffset: 20,
+              shadowScale: 0.94,
+            }}
+          >
+            {menData.map((item) => (
+              <SwiperSlide key={item.id}>
+                <div className="men-list--slide">
+                  <picture>
+                    <source type="image/webp" srcSet={item.pathWebp} />
+                    <img
+                      onClick={(e) => handleSlideImage(e)}
+                      id={item.id}
+                      src={item.path}
+                      width={item.width}
+                      height={item.height}
+                      alt={item.alt}
+                    />
+                  </picture>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
+        {isTablet && (
+          <Swiper
+            slidesPerView={2.5}
+            centeredSlides={true}
+            spaceBetween={15}
+            modules={[Pagination, FreeMode, Navigation]}
+            pagination={{ clickable: true }}
+            loop={true}
+            freeMode={true}
+            navigation={true}
+          >
+            {menData.map((item) => (
+              <SwiperSlide key={item.id}>
+                <div className="men-list--slide">
+                  <picture>
+                    <source type="image/webp" srcSet={item.pathWebp} />
+                    <img
+                      src={item.path}
+                      width={item.width}
+                      height={item.height}
+                      alt={item.alt}
+                    />
+                  </picture>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
+      </div>
+      {modalImg.isOpen &&
+       <Modal imgSrc={modalImg.imgSrc} imgWebp={modalImg.imgWebp} imgAlt={modalImg.imgAlt} closeModal={handleCloseModal} />}
+    </section>
+  );
+};
+
+export { MenList };
