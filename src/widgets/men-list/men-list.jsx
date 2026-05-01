@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/free-mode';
-import 'swiper/css/effect-cube';
+import 'swiper/css/effect-creative';
 import {
   FreeMode,
   Pagination,
-  EffectCube,
+  EffectCreative,
   Navigation,
 } from 'swiper/modules';
 import { menData } from '../../shared/data/men-data';
@@ -44,16 +44,20 @@ const MenList = () => {
         {isMobile && (
           <Swiper
             slidesPerView={1}
-            modules={[Pagination, EffectCube]}
+            modules={[Pagination, EffectCreative]}
             pagination={{ dynamicBullets: true }}
             loop={true}
-            effect="cube"
-            cubeEffect={{
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 20,
-              shadowScale: 0.94,
+            effect="creative"
+                        creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: [0, 0, -500],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+              },
             }}
+
           >
             {menData.map((item) => (
               <SwiperSlide key={item.id}>

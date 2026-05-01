@@ -50,7 +50,7 @@ const GirlsList = () => {
             effect="creative"
             creativeEffect={{
               prev: {
-                // shadow: true,
+                shadow: true,
                 translate: [0, 0, -500],
               },
               next: {
