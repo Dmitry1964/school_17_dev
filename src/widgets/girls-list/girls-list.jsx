@@ -45,7 +45,7 @@ const GirlsList = () => {
           <Swiper
             slidesPerView={1}
             modules={[Pagination, EffectCreative]}
-            pagination={{ clickable: true }}
+            pagination={{ dynamicBullets: true }}
             loop={true}
             effect="creative"
             creativeEffect={{
