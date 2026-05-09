@@ -5,7 +5,7 @@ const ScrollToNavbarBottom = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const navbar = document.querySelector("nav.navbar");
+    const navbar = document.querySelector(".navbar");
     if (!navbar) {
       return;
     }
