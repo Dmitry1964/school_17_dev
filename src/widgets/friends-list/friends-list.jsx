@@ -41,6 +41,13 @@ const FriendsList = () => {
     <section className="friends-list">
       <h2 className="friends-list--title">Школьные годы</h2>
       <div className="friends-list--wrapper container">
+        <div className='friends-list--class'>
+          <img src="/img/friends/school01.jpg" width={600} height={750} alt="Фото последний звонок" />
+
+        </div>
+        <div className='friends-list--teachers'>
+          <img src="/img/friends/school02.jpg" width={600} height={544} alt="Фото учителя" />
+        </div>
         {isMobile && (
           <Swiper
             slidesPerView={1}

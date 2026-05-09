@@ -10,7 +10,8 @@ const ScrollToNavbarBottom = () => {
       return;
     }
 
-    const targetScrollTop = navbar.offsetTop + navbar.offsetHeight;
+    const targetScrollTop = navbar.offsetTop;
+    console.log("targetScrollTop:", targetScrollTop);
 
     window.scrollTo({
       top: targetScrollTop,
