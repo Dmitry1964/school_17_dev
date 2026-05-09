@@ -5,7 +5,7 @@ import MainPageLazy from '../pages/main-page/main-page-lazy';
 import GirlsPageLazy from '../pages/girls-page/girls-page-lazy';
 import MenPageLazy from '../pages/men-page/men-page-lazy';
 import FriendsPageLazy from '../pages/friends-page/friends-page-lazy';
-import AfterSchoolPageLazy from '../pages/after-scool-page/after-school-page-lazy';
+import AfterSchoolPageLazy from '../pages/after-school-page/after-school-page-lazy';
 
 const App = () => {
   const router = createBrowserRouter([

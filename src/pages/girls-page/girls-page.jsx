@@ -1,11 +1,11 @@
-import ScrollBottom from "../../shared/scroll=bottom/scroll-bottom";
+import ScrollToNavbarBottom from "../../shared/scroll-to-navbar-bottom/scroll-to-navbar-bottom";
 import { GirlsList } from "../../widgets/girls-list/girls-list";
 
 const GirlsPage = () => {
   return (
     <main>
       <GirlsList/>
-      <ScrollBottom />
+      <ScrollToNavbarBottom/>
     </main>
   );
 };
