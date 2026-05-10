@@ -83,13 +83,13 @@ export const friendsData = [
     width: '600',
     height: '500',
   },
-  // {
-  //   id: 'school15',
-  //   path: '/img/friends/school15.jpg',
-  //   alt: 'Фотография мужчин',
-  //   width: '600',
-  //   height: '500',
-  // },
+  {
+    id: 'school15',
+    path: '/img/friends/school15.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
   {
     id: 'school16',
     path: '/img/friends/school16.jpg',
@@ -160,4 +160,12 @@ export const friendsData = [
     width: '600',
     height: '500',
   },
+    {
+    id: 'school26',
+    path: '/img/friends/school26.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+
 ];
