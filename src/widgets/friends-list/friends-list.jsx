@@ -69,8 +69,6 @@ const FriendsList = () => {
             {friendsData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="friends-list--slide">
-                  <picture>
-                    <source type="image/webp" srcSet={item.pathWebp} />
                     <img
                       onClick={(e) => handleSlideImage(e)}
                       id={item.id}
@@ -79,7 +77,6 @@ const FriendsList = () => {
                       height={item.height}
                       alt={item.alt}
                     />
-                  </picture>
                 </div>
               </SwiperSlide>
             ))}
@@ -99,15 +96,12 @@ const FriendsList = () => {
             {friendsData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="friends-list--slide">
-                  <picture>
-                    <source type="image/webp" srcSet={item.pathWebp} />
                     <img
                       src={item.path}
                       width={item.width}
                       height={item.height}
                       alt={item.alt}
                     />
-                  </picture>
                 </div>
               </SwiperSlide>
             ))}

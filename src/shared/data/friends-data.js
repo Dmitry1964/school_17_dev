@@ -18,7 +18,6 @@ export const friendsData = [
   {
     id: 'school05',
     path: '/img/friends/school05.jpg',
-    pathWebp: '/img/friends/school05.webp',
     alt: 'Фотография мужчин',
     width: '260',
     height: '217'
@@ -26,7 +25,6 @@ export const friendsData = [
     {
     id: 'school06',
     path: '/img/friends/school06.jpg',
-    pathWebp: '/img/friends/school06.webp',
     alt: 'Фотография мужчин',
     width: '260',
     height: '217'
@@ -34,7 +32,6 @@ export const friendsData = [
     {
     id: 'school07',
     path: '/img/friends/school07.jpg',
-    pathWebp: '/img/friends/school07.webp',
     alt: 'Фотография мужчин',
     width: '260',
     height: '217'
@@ -42,7 +39,6 @@ export const friendsData = [
   {
     id: 'school08',
     path: '/img/friends/school08.jpg',
-    pathWebp: '/img/friends/school08.webp',
     alt: 'Фотография мужчин',
     width: '260',
     height: '217'
