@@ -2,47 +2,162 @@ export const friendsData = [
   {
     id: 'school03',
     path: '/img/friends/school03.jpg',
-    pathWebp: '/img/friends/school03.webp',
     alt: 'Фотография мужчин',
-    width: '260',
-    height: '217'
+    width: '600',
+    height: '500',
   },
   {
     id: 'school04',
     path: '/img/friends/school04.jpg',
-    pathWebp: '/img/friends/school04.webp',
     alt: 'Фотография мужчин',
-    width: '260',
-    height: '217'
+    width: '600',
+    height: '500',
   },
   {
     id: 'school05',
     path: '/img/friends/school05.jpg',
     alt: 'Фотография мужчин',
-    width: '260',
-    height: '217'
+    width: '600',
+    height: '500',
   },
-    {
+  {
     id: 'school06',
     path: '/img/friends/school06.jpg',
     alt: 'Фотография мужчин',
-    width: '260',
-    height: '217'
+    width: '600',
+    height: '500',
   },
-    {
+  {
     id: 'school07',
     path: '/img/friends/school07.jpg',
     alt: 'Фотография мужчин',
-    width: '260',
-    height: '217'
+    width: '600',
+    height: '500',
   },
   {
     id: 'school08',
     path: '/img/friends/school08.jpg',
     alt: 'Фотография мужчин',
-    width: '260',
-    height: '217'
+    width: '600',
+    height: '500',
   },
-
-
-]
+  {
+    id: 'school09',
+    path: '/img/friends/school09.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school10',
+    path: '/img/friends/school10.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school11',
+    path: '/img/friends/school11.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school12',
+    path: '/img/friends/school12.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school13',
+    path: '/img/friends/school13.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school14',
+    path: '/img/friends/school14.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  // {
+  //   id: 'school15',
+  //   path: '/img/friends/school15.jpg',
+  //   alt: 'Фотография мужчин',
+  //   width: '600',
+  //   height: '500',
+  // },
+  {
+    id: 'school16',
+    path: '/img/friends/school16.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school17',
+    path: '/img/friends/school17.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school18',
+    path: '/img/friends/school18.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school19',
+    path: '/img/friends/school19.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school20',
+    path: '/img/friends/school20.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school21',
+    path: '/img/friends/school21.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school22',
+    path: '/img/friends/school22.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school23',
+    path: '/img/friends/school23.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school24',
+    path: '/img/friends/school24.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+  {
+    id: 'school25',
+    path: '/img/friends/school25.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+];
