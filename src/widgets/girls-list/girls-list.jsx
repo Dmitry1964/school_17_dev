@@ -32,11 +32,17 @@ const GirlsList = () => {
     const srcImg = findImg.path;
     const srcWebp = findImg.pathWebp;
     const altImg = findImg.alt;
-    setModalImg({ ...modalImg, imgSrc: srcImg, imgWebp: srcWebp, imgAlt: altImg, isOpen: true });
+    setModalImg({
+      ...modalImg,
+      imgSrc: srcImg,
+      imgWebp: srcWebp,
+      imgAlt: altImg,
+      isOpen: true,
+    });
   };
   const handleCloseModal = () => {
     setModalImg({ ...modalImg, isOpen: false });
-  }
+  };
   return (
     <section className="girls-list">
       <h2 className="girls-list--title">Это наши девушки</h2>
@@ -61,14 +67,14 @@ const GirlsList = () => {
             {girlsData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="girls-list--slide">
-                    <img
-                      onClick={(e) => handleSlideImage(e)}
-                      id={item.id}
-                      src={item.path}
-                      width={item.width}
-                      height={item.height}
-                      alt={item.alt}
-                    />
+                  <img
+                    onClick={(e) => handleSlideImage(e)}
+                    id={item.id}
+                    src={item.path}
+                    width={item.width}
+                    height={item.height}
+                    alt={item.alt}
+                  />
                 </div>
               </SwiperSlide>
             ))}
@@ -88,20 +94,28 @@ const GirlsList = () => {
             {girlsData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="girls-list--slide">
-                    <img
-                      src={item.path}
-                      width={item.width}
-                      height={item.height}
-                      alt={item.alt}
-                    />
+                  <img
+                    onClick={(e) => handleSlideImage(e)}
+                    id={item.id}
+                    src={item.path}
+                    width={item.width}
+                    height={item.height}
+                    alt={item.alt}
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         )}
       </div>
-      {modalImg.isOpen &&
-       <Modal imgSrc={modalImg.imgSrc} imgWebp={modalImg.imgWebp} imgAlt={modalImg.imgAlt} closeModal={handleCloseModal} />}
+      {modalImg.isOpen && (
+        <Modal
+          imgSrc={modalImg.imgSrc}
+          imgWebp={modalImg.imgWebp}
+          imgAlt={modalImg.imgAlt}
+          closeModal={handleCloseModal}
+        />
+      )}
     </section>
   );
 };

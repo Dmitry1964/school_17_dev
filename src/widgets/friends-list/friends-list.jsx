@@ -32,21 +32,36 @@ const FriendsList = () => {
     const srcImg = findImg.path;
     const srcWebp = findImg.pathWebp;
     const altImg = findImg.alt;
-    setModalImg({ ...modalImg, imgSrc: srcImg, imgWebp: srcWebp, imgAlt: altImg, isOpen: true });
+    setModalImg({
+      ...modalImg,
+      imgSrc: srcImg,
+      imgWebp: srcWebp,
+      imgAlt: altImg,
+      isOpen: true,
+    });
   };
   const handleCloseModal = () => {
     setModalImg({ ...modalImg, isOpen: false });
-  }
+  };
   return (
     <section className="friends-list">
       <h2 className="friends-list--title">Школьные годы</h2>
       <div className="friends-list--wrapper container">
-        <div className='friends-list--class'>
-          <img src="/img/friends/school01.jpg" width={600} height={750} alt="Фото последний звонок" />
-
+        <div className="friends-list--class">
+          <img
+            src="/img/friends/school01.jpg"
+            width={600}
+            height={750}
+            alt="Фото последний звонок"
+          />
         </div>
-        <div className='friends-list--teachers'>
-          <img src="/img/friends/school02.jpg" width={600} height={544} alt="Фото учителя" />
+        <div className="friends-list--teachers">
+          <img
+            src="/img/friends/school02.jpg"
+            width={600}
+            height={544}
+            alt="Фото учителя"
+          />
         </div>
         {isMobile && (
           <Swiper
@@ -55,7 +70,7 @@ const FriendsList = () => {
             pagination={{ dynamicBullets: true }}
             loop={true}
             effect="creative"
-                        creativeEffect={{
+            creativeEffect={{
               prev: {
                 shadow: true,
                 translate: [0, 0, -500],
@@ -64,19 +79,18 @@ const FriendsList = () => {
                 translate: ['100%', 0, 0],
               },
             }}
-
           >
             {friendsData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="friends-list--slide">
-                    <img
-                      onClick={(e) => handleSlideImage(e)}
-                      id={item.id}
-                      src={item.path}
-                      width={item.width}
-                      height={item.height}
-                      alt={item.alt}
-                    />
+                  <img
+                    onClick={(e) => handleSlideImage(e)}
+                    id={item.id}
+                    src={item.path}
+                    width={item.width}
+                    height={item.height}
+                    alt={item.alt}
+                  />
                 </div>
               </SwiperSlide>
             ))}
@@ -96,20 +110,28 @@ const FriendsList = () => {
             {friendsData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="friends-list--slide">
-                    <img
-                      src={item.path}
-                      width={item.width}
-                      height={item.height}
-                      alt={item.alt}
-                    />
+                  <img
+                    onClick={(e) => handleSlideImage(e)}
+                    id={item.id}
+                    src={item.path}
+                    width={item.width}
+                    height={item.height}
+                    alt={item.alt}
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         )}
       </div>
-      {modalImg.isOpen &&
-       <Modal imgSrc={modalImg.imgSrc} imgWebp={modalImg.imgWebp} imgAlt={modalImg.imgAlt} closeModal={handleCloseModal} />}
+      {modalImg.isOpen && (
+        <Modal
+          imgSrc={modalImg.imgSrc}
+          imgWebp={modalImg.imgWebp}
+          imgAlt={modalImg.imgAlt}
+          closeModal={handleCloseModal}
+        />
+      )}
     </section>
   );
 };

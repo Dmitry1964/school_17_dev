@@ -32,11 +32,17 @@ const MenList = () => {
     const srcImg = findImg.path;
     const srcWebp = findImg.pathWebp;
     const altImg = findImg.alt;
-    setModalImg({ ...modalImg, imgSrc: srcImg, imgWebp: srcWebp, imgAlt: altImg, isOpen: true });
+    setModalImg({
+      ...modalImg,
+      imgSrc: srcImg,
+      imgWebp: srcWebp,
+      imgAlt: altImg,
+      isOpen: true,
+    });
   };
   const handleCloseModal = () => {
     setModalImg({ ...modalImg, isOpen: false });
-  }
+  };
   return (
     <section className="men-list">
       <h2 className="men-list--title">Сильная половина</h2>
@@ -48,7 +54,7 @@ const MenList = () => {
             pagination={{ dynamicBullets: true }}
             loop={true}
             effect="creative"
-                        creativeEffect={{
+            creativeEffect={{
               prev: {
                 shadow: true,
                 translate: [0, 0, -500],
@@ -57,19 +63,18 @@ const MenList = () => {
                 translate: ['100%', 0, 0],
               },
             }}
-
           >
             {menData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="men-list--slide">
-                    <img
-                      onClick={(e) => handleSlideImage(e)}
-                      id={item.id}
-                      src={item.path}
-                      width={item.width}
-                      height={item.height}
-                      alt={item.alt}
-                    />
+                  <img
+                    onClick={(e) => handleSlideImage(e)}
+                    id={item.id}
+                    src={item.path}
+                    width={item.width}
+                    height={item.height}
+                    alt={item.alt}
+                  />
                 </div>
               </SwiperSlide>
             ))}
@@ -89,20 +94,28 @@ const MenList = () => {
             {menData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="men-list--slide">
-                    <img
-                      src={item.path}
-                      width={item.width}
-                      height={item.height}
-                      alt={item.alt}
-                    />
+                  <img
+                    onClick={(e) => handleSlideImage(e)}
+                    id={item.id}
+                    src={item.path}
+                    width={item.width}
+                    height={item.height}
+                    alt={item.alt}
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         )}
       </div>
-      {modalImg.isOpen &&
-       <Modal imgSrc={modalImg.imgSrc} imgWebp={modalImg.imgWebp} imgAlt={modalImg.imgAlt} closeModal={handleCloseModal} />}
+      {modalImg.isOpen && (
+        <Modal
+          imgSrc={modalImg.imgSrc}
+          imgWebp={modalImg.imgWebp}
+          imgAlt={modalImg.imgAlt}
+          closeModal={handleCloseModal}
+        />
+      )}
     </section>
   );
 };
