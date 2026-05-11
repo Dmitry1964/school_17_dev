@@ -14,7 +14,6 @@ const App = () => {
       element: (
         <>
           <Layout />
-          {/* <ScrollTop /> */}
         </>
       ),
       children: [

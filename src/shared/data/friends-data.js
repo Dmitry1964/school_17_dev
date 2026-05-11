@@ -167,5 +167,13 @@ export const friendsData = [
     width: '600',
     height: '500',
   },
+      {
+    id: 'school27',
+    path: '/img/friends/school27.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+
 
 ];
