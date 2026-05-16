@@ -90,20 +90,20 @@ export const menData = [
   //   width: '260',
   //   height: '347'
   // },
-  {
-    id: 'man14',
-    path: '/img/men/man14.jpg',
-    alt: 'Фотография мужчин',
-    width: '260',
-    height: '347'
-  },
-    {
-    id: 'man15',
-    path: '/img/men/man15.jpg',
-    alt: 'Фотография мужчин',
-    width: '260',
-    height: '347'
-  },
+  // {
+  //   id: 'man14',
+  //   path: '/img/men/man14.jpg',
+  //   alt: 'Фотография мужчин',
+  //   width: '260',
+  //   height: '347'
+  // },
+  //   {
+  //   id: 'man15',
+  //   path: '/img/men/man15.jpg',
+  //   alt: 'Фотография мужчин',
+  //   width: '260',
+  //   height: '347'
+  // },
     {
     id: 'man16',
     path: '/img/men/man16.jpg',
