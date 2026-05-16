@@ -25,10 +25,3 @@
     transform: rotate(360deg);
   }
 }
-
-.loadingContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Или другую подходящую высоту */
-}

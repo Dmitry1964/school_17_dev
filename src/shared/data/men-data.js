@@ -83,13 +83,13 @@ export const menData = [
     width: '260',
     height: '347'
   },
-  {
-    id: 'man13',
-    path: '/img/men/man13.jpg',
-    alt: 'Фотография мужчин',
-    width: '260',
-    height: '347'
-  },
+  // {
+  //   id: 'man13',
+  //   path: '/img/men/man13.jpg',
+  //   alt: 'Фотография мужчин',
+  //   width: '260',
+  //   height: '347'
+  // },
   {
     id: 'man14',
     path: '/img/men/man14.jpg',
