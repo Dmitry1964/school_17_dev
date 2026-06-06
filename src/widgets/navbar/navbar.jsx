@@ -85,7 +85,7 @@ const Navbar = () => {
             </div>
           </NavLink>
         </li>
-                <li className="navbar-item">
+        {/* <li className="navbar-item">
           <NavLink
             to="after-school"
             className={({ isActive }) =>
@@ -104,8 +104,7 @@ const Navbar = () => {
               <div className="navbar-link--bg"></div>
             </div>
           </NavLink>
-        </li>
-
+        </li> */}
       </ul>
     </nav>
   );

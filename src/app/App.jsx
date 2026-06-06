@@ -34,10 +34,10 @@ const App = () => {
           path: 'friends',
           element: <FriendsPageLazy />,
         },
-        {
-          path: 'after-school',
-          element: <AfterSchoolPageLazy />,
-        },
+        // {
+        //   path: 'after-school',
+        //   element: <AfterSchoolPageLazy />,
+        // },
       ],
     },
   ]);
