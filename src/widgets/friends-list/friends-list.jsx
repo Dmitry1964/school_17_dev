@@ -49,6 +49,15 @@ const FriendsList = () => {
       <div className="friends-list--wrapper container">
         <div className="friends-list--class">
           <img
+            src="/img/friends/first-class.jpg"
+            width={600}
+            height={750}
+            alt="Фото последний звонок"
+          />
+        </div>
+
+        <div className="friends-list--class">
+          <img
             src="/img/friends/school01.jpg"
             width={600}
             height={750}

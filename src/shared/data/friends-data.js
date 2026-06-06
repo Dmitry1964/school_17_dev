@@ -279,6 +279,35 @@ export const friendsData = [
     width: '600',
     height: '500',
   },
+    {
+    id: 'school44',
+    path: '/img/friends/school44.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+    {
+    id: 'school45',
+    path: '/img/friends/school45.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+      {
+    id: 'school46',
+    path: '/img/friends/school46.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+        {
+    id: 'school47',
+    path: '/img/friends/school47.jpg',
+    alt: 'Фотография мужчин',
+    width: '600',
+    height: '500',
+  },
+
 
 
 ];
